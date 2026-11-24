@@ -3,7 +3,7 @@ package com.example.appsupabaseis2026_2
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,7 +28,19 @@ class actilistaseleccion : AppCompatActivity() {
             insets
         }
 
+        val actNiveles = findViewById<AutoCompleteTextView>(R.id.listaNiveles)
 
+        actNiveles.setOnItemClickListener { parent, _, position, id->
+            val nivelSeleccionado = parent.getItemAtPosition(position).toString()
+
+            Toast.makeText(
+                this,
+                "Nivel seleccionado: $nivelSeleccionado",
+                Toast.LENGTH_LONG
+            ).show()
+
+            llenarmaterias(position + 1)
+        }
     }
     fun llenarmaterias (nivel :Int){
         val autoCompleteTextViewMaterias = findViewById<AutoCompleteTextView>(R.id.listaMaterias)
