@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">appsupabaseis2026_2</string>
+    <string-array name="lista_meses">
+        <item>Enero</item><item>Febrero</item><item>Marzo</item>
+        <item>Abril</item><item>Mayo</item><item>Junio</item>
+        <item>Julio</item><item>Agosto</item><item>Septiembre</item>
+        <item>Octubre</item><item>Noviembre</item><item>Diciembre</item>
+    </string-array>
+    <string-array name="lista_dias_semana">
+        <item>Lunes</item><item>Martes</item><item>Miércoles</item>
+        <item>Jueves</item><item>Viernes</item><item>Sábado</item>
+        <item>Domingo</item>
+    </string-array>
+    <string-array name="niveles">
+        <item>Primer nivel</item>
+        <item>Segundo nivel</item>
+        <item>Tercer nivel</item>
+        <item>Cuarto nivel</item>
+        <item>Quinto nivel</item>
+        <item>Sexto nivel</item>
+        <item>Séptimo nivel</item>
+        <item>Octavo nivel</item>
+        <item>Noveno nivel</item>
+        <item>Décimo nivel</item>
+    </string-array>
+
 </resources>
