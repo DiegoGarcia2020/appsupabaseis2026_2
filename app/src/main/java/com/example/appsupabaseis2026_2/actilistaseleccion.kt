@@ -36,8 +36,7 @@ class actilistaseleccion : AppCompatActivity() {
             Toast.makeText(
                 this,
                 "Nivel seleccionado: $nivelSeleccionado",
-                Toast.LENGTH_LONG
-            ).show()
+                Toast.LENGTH_LONG).show()
 
             llenarmaterias(position + 1)
         }
