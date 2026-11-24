@@ -8,10 +8,14 @@ plugins {
 val props = Properties().apply {
     rootProject.file("local.properties").inputStream().use { load(it) }
 }
-val url = props.getProperty("SUPABASE_URL")
-    ?: error("Falta SUPABASE_URL en local.properties")
-val key = props.getProperty("SUPABASE_KEY")
-    ?: error("Falta SUPABASE_KEY en local.properties")
+val url = props.getProperty("SUPABASE_URL") ?: run {
+    logger.warn("Falta SUPABASE_URL en local.properties")
+    ""
+}
+val key = props.getProperty("SUPABASE_KEY") ?: run {
+    logger.warn("Falta SUPABASE_KEY en local.properties")
+    ""
+}
 android {
     buildFeatures {
         buildConfig = true
