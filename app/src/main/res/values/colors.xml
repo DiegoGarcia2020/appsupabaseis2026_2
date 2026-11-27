@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="uteq_green">#0F4A1E</color>
+    <color name="uteq_green_light">#EEF4EC</color>
+    <color name="uteq_gold">#D4A72C</color>
+    <color name="uteq_text">#2B2B2B</color>
 </resources>
